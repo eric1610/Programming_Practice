@@ -33,6 +33,7 @@ def main():
     num_tests = int(input().strip())
     for _ in range(num_tests):
         low, high = [int (num) for num in input().strip().split(" ")]
+        # number of guesses unneeded, but have to consume the input
         num_guess = int(input().strip())
         recur_binary_search(low + 1, high)
         #iter_binary_search(low + 1, high)
